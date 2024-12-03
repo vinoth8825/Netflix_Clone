@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#tint {
+  background-color: rgba(0, 0, 0, 0.45);
+  background-image: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8) 0,
+    rgba(0, 0, 0, 0) 60%,
+    rgba(0, 0, 0, 0.8) 100%
+  );
+}
+
+#language-select {
+  -webkit-appearance: none;
+
+  -moz-appearance: none;
+}
+
+option {
+  color: black;
+  padding: 7px;
+}
+
+.netflix-logo {
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  display: block;
+  height: auto;
+  width: 9rem;
+}
+
+.black-bg {
+  background-color: rgba(11, 11, 11, 0.295);
+}
+#get-started {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* #freq_questions {
+  height: 80px;
+} */
+
+/* #freq_questions:hover {
+  overflow-y: none;
+} */
+
+.answer {
+  max-height: 0;
+  overflow: hidden;
+
+  transition: all 0.2s;
+}
+
+.answer p {
+  padding: 19px;
+}
+
+.answer.active {
+  max-height: fit-content;
+}
+
+.plus {
+  transition: all 0.2s;
+}
+
+.plus.active {
+  transform: rotate(-45deg);
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 50px;
+}
+
+ul li {
+  margin-bottom: 10px;
+  width: 200px;
+  font-size: 15px;
+  color: lightgray;
+  text-decoration: underline;
+}
+
+#input_last {
+  position: relative;
+}
+
+.label_last {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-weight: 500;
+  transition: all ease 0.3s;
+}
+
+.label_last.up {
+  top: 10px;
+  font-size: 13px;
+}
